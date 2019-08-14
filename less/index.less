@@ -59,12 +59,25 @@ html, body {
 }
 html{
 	font-size:10px;
+	background-color:@back;
 }
-
+@back:lightgrey;
 .mainColor(){
 	background-color:#a9c5a4;
+	border:3px solid black;
 }
 
+.giantContainer{
+	max-width:90%;
+	height:auto;
+	margin-left:10%;
+	margin-right:10%;
+}
+h2, h3{
+	margin-bottom:7%;
+	font-size:2.75rem;
+	font-weight:bold;
+}
 .topContainer{
 	max-width:90%;
 	height:auto;
@@ -77,9 +90,26 @@ html{
 		padding:3%;
 		height:auto;
 	}
+	.topContent{
+		display:flex;
+		flex-direction:column;
+
+	}
 	h1{
-		align-items:center;
+		// margin-top:3%;
+		// margin-left:5%;
+		// margin-bottom:5%;
+		// width:100%;
+		text-align:center;
 		font-size: 6rem;
+		// border-bottom:3px dotted darkslategrey;
+		// height:12%;
+		
+	}
+	li{
+		font-size:3rem;
+		margin:6%;
+		padding-left:12%;
 	}
 }
 
@@ -92,5 +122,64 @@ nav{
 		padding:3%;
 		text-decoration:none;
 		color:slategrey;
+		font-size:2.5rem
 	}
+}
+p{
+	font-size:2.25rem;
+}
+.midMargin(){
+	margin:8%;
+}
+.midContainer{
+	 .ed{
+		.midMargin;
+		max-width:30%;
+
+	}
+	.people{
+		.midMargin;
+		max-width:30%;
+	}
+	.service{
+		.midMargin;
+		max-width:30%;
+	}
+	.public{
+		.midMargin;
+		max-width:30%;
+	}
+	.info1 {
+		display:flex;
+		justify-content:center;
+		
+	}
+	.info2 {
+		display:flex;
+		justify-content:center;
+	}
+}
+
+.bottomContainer{
+	margin-bottom:10%;
+	padding:2%;
+	.about{
+		margin-top:-4%;
+		
+	}
+	.mainColor();
+}
+
+@media only screen and (max-width:500px){
+	.topContainer{
+		h1{
+			font-size:4rem;
+		}
+	
+		.profile{
+			display:none;
+		}
+	}
+
+
 }
