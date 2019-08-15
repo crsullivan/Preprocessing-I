@@ -67,7 +67,7 @@ html{
 }
 @back:lightgrey;
 .mainColor(){
-	background-color:#a9c5a4;
+	background-color:azure;
 	border:3px solid black;
 }
 
@@ -83,6 +83,7 @@ h2, h3{
 	font-weight:bold;
 }
 .topContainer{
+	border-radius: 25px;
 	max-width:90%;
 	height:auto;
 	margin-left:10%;
@@ -105,7 +106,7 @@ h2, h3{
 		// margin-bottom:5%;
 		// width:100%;
 		text-align:center;
-		font-size: 6rem;
+		font-size: 5rem;
 		// border-bottom:3px dotted darkslategrey;
 		// height:12%;
 		
@@ -113,7 +114,7 @@ h2, h3{
 	li{
 		font-size:2.5rem;
 		margin:6%;
-		padding-left:12%;
+		padding-left:8%;
 	}
 }
 
@@ -127,13 +128,26 @@ nav{
 		text-decoration:none;
 		color:slategrey;
 		font-size:2.5rem
+		
 	}
+	
+	a:hover {
+		border: 3px dotted #3a7999;
+		color: #3a7999;
+		background: rgba(0,0,0,0);
+	}
+
 }
 p{
 	font-size:2.25rem;
 }
 .midMargin(){
-	margin:8%;
+	margin:2%;
+	padding:2%;
+	text-align:center;
+	border:6px double ghostwhite;
+	border-radius: 25px;
+
 }
 .midContainer{
 	 .ed{
@@ -172,6 +186,8 @@ p{
 		
 	}
 	.mainColor();
+	border-radius: 25px;
+
 }
 
 @media only screen and (max-width:500px){
