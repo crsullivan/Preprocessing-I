@@ -1,1 +1,264 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v11/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
+}
+body {
+  line-height: 1;
+  font-family: 'Nunito', sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 10px;
+  background-color: lightgrey;
+}
+.giantContainer {
+  max-width: 90%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+h2,
+h3 {
+  margin-bottom: 7%;
+  font-size: 2.75rem;
+  font-weight: bold;
+}
+.topContainer {
+  border-radius: 25px;
+  max-width: 90%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  background-color: azure;
+  border: 3px solid black;
+}
+.topContainer .profile {
+  max-width: 30%;
+  padding: 3%;
+  height: auto;
+}
+.topContainer .topContent {
+  display: flex;
+  flex-direction: column;
+}
+.topContainer h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+.topContainer li {
+  font-size: 2.5rem;
+  margin: 6%;
+  padding-left: 8%;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  padding: 3%;
+  text-decoration: none;
+  color: slategrey;
+  font-size: 2.5rem;
+}
+nav a:hover {
+  border: 3px dotted #3a7999;
+  color: #3a7999;
+  background: rgba(0, 0, 0, 0);
+}
+p {
+  font-size: 2.25rem;
+}
+.midContainer .ed {
+  margin: 2%;
+  padding: 2%;
+  text-align: center;
+  border: 6px double ghostwhite;
+  border-radius: 25px;
+  max-width: 30%;
+}
+.midContainer .people {
+  margin: 2%;
+  padding: 2%;
+  text-align: center;
+  border: 6px double ghostwhite;
+  border-radius: 25px;
+  max-width: 30%;
+}
+.midContainer .service {
+  margin: 2%;
+  padding: 2%;
+  text-align: center;
+  border: 6px double ghostwhite;
+  border-radius: 25px;
+  max-width: 30%;
+}
+.midContainer .public {
+  margin: 2%;
+  padding: 2%;
+  text-align: center;
+  border: 6px double ghostwhite;
+  border-radius: 25px;
+  max-width: 30%;
+}
+.midContainer .info1 {
+  display: flex;
+  justify-content: center;
+}
+.midContainer .info2 {
+  display: flex;
+  justify-content: center;
+}
+.bottomContainer {
+  margin-bottom: 10%;
+  padding: 2%;
+  background-color: azure;
+  border: 3px solid black;
+  border-radius: 25px;
+}
+.bottomContainer .about {
+  margin-top: -4%;
+}
+@media only screen and (max-width: 500px) {
+  .topContainer h1 {
+    font-size: 4rem;
+  }
+  .topContainer .profile {
+    display: none;
+  }
+}
